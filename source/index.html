@@ -14,13 +14,13 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+              <a class="site-list__link">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">Каталог продукции</a>
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a href="">Подбор программы</a>
+              <a class="site-list__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -28,7 +28,7 @@
     </header>
     <main class="page-main">
       <section class="hero-header">
-        <h1 class="page-main__title">Функциональное
+        <h1 class="page-main__title main-title">Функциональное
           питание для котов</h1>
         <p class="hero-header__slogan">Занялся собой? Займись котом!</p>
         <img class="hero-header__image" src="https://dummyimage.com/280x270/cccccc/000000" width="280" height="270" alt="Корм кэт энерджи про с курицей">
@@ -37,19 +37,19 @@
       <section class="programmes">
         <h2 class="visually-hidden">Программы питания</h2>
         <ul class="programmes__list">
-          <li class="programmes__item">
-            <h3 class="programmes__title">Похудение</h3>
-            <p class="programmes__overview">
+          <li class="programmes__item program">
+            <h3 class="program__title">Похудение</h3>
+            <p class="program__overview">
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
-            <a class="programmes__link" href="">Каталог Slim</a>
+            <a class="program__link" href="">Каталог Slim</a>
           </li>
-          <li class="programmes__item">
-            <h3 class="programmes__title">Набор массы</h3>
-            <p class="programmes__overview">
+          <li class="programmes__item program">
+            <h3 class="program__title">Набор массы</h3>
+            <p class="program__overview">
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
-            <a class="programmes__link" href="">Каталог pro</a>
+            <a class="program__link" href="">Каталог pro</a>
           </li>
         </ul>
       </section>
@@ -86,9 +86,11 @@
         <p class="example__costs">Затраты на питание: 15 000 руб.</p>
         <img src="https://dummyimage.com/311x232/cccccc/000000" width="311" height="232" alt="Результат у кота">
         <div class="example__slider">
-          <p>Было</p>
-          <p>Слайдер</p>
-          <p>Стало</p>
+          <button type="button">Было</button>
+          <div class="example__scale">
+            <div class="example__bar">Слайдер</div>
+          </div>
+          <button type="button">Стало</button>
         </div>
       </section>
       <section class="collaboration">
@@ -103,12 +105,20 @@
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
-          <li class="social__item">Мы в Вконтакте</li>
-          <li class="social__item">Мы в инстаграме</li>
-          <li class="social__item">Мы в фейсбуке</li>
+          <li class="social__item">
+            <a class="social__link">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link">Мы в инстаграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link">Мы в фейсбуке</a>
+          </li>
         </ul>
       </div>
-      <div class="page-footer__copyright"><a href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a></div>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy (здесь будет свг)</a>
+      </div>
     </footer>
   </body>
 </html>
