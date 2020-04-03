@@ -7,8 +7,8 @@
   width: 280px;
   height: 289px;
   padding-top: 185px;
-  background-color: #B6F2D0;
-  background-image: url(../../img/gift-photo-mobile@1x.jpg);
+  background-color: #b6f2d0;
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
   text-align: center;
 }
 
@@ -17,5 +17,6 @@
   width: 170px;
   font-family: $overview-font;
   color: $color-text-white;
+
   @include text(16px, 20px);
 }

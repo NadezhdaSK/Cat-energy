@@ -4,6 +4,7 @@
 
 .catalog__list {
   border-top: 1px solid #ededed;
+
   @include list;
 }
 
@@ -23,5 +24,3 @@
   font-family: $overview-font;
   color: $color-overview;
 }
-
-

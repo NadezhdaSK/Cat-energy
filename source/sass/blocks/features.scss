@@ -8,6 +8,7 @@
 
 .features__title {
   margin: 0;
+
   @include text(36px, 60px);
   font-weight: 400;
 }
@@ -20,6 +21,7 @@
   margin-top: 28px;
   padding-left: 80px;
   font-family: $overview-font;
+
   @include text(14px, 18px);
   color: $color-overview;
 }

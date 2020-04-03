@@ -12,6 +12,7 @@
 
 .additional__list {
   border-top: 1px solid #cdcdcd;
+
   @include list;
 }
 

@@ -9,12 +9,14 @@
 .example__title {
   margin: 0;
   margin-bottom: 20px;
+
   @include text(36px, 60px);
   font-weight: 400;
 }
 
 .example__overview {
   font-family: $overview-font;
+
   @include text(14px, 18px);
   color: $color-overview;
 }
@@ -36,6 +38,7 @@
   border: 1px solid #cdcdcd;
   border-radius: 5px;
   padding: 15px 0;
+
   @include text(24px, 24px);
   text-transform: uppercase;
 }
@@ -51,11 +54,13 @@
   margin: 0;
   font-family: $overview-font;
   color: $color-overview;
+
   @include text(12px, 12px);
 }
 
 .example__costs {
   text-align: center;
+
   @include text(14px, 20px);
   text-transform: uppercase;
 }
@@ -64,6 +69,7 @@
   border: none;
   background-color: transparent;
   font-family: $main-font;
+
   @include text(16px, 20px);
   text-transform: uppercase;
 }

@@ -9,12 +9,13 @@
   margin-bottom: 135px;
   padding: 29px 20px;
   min-height: 305px;
-  background-color: #B6F2D0;
-  background-image: url(../../img/index-background-mobile@1x.jpg);
+  background-color: #b6f2d0;
+  background-image: url("../../img/index-background-mobile@1x.jpg");
 }
 
 .hero-header__slogan {
   text-align: center;
+
   @include text(14px, 14px);
   text-transform: uppercase;
   color: $color-text-white;

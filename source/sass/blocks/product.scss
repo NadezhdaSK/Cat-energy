@@ -13,6 +13,7 @@
 .product__title {
   margin-top: -2px;
   width: 80px;
+
   @include text(16px, 20px);
   color: $color-text;
   font-weight: 400;
@@ -21,6 +22,7 @@
 .product__overview td {
   font-family: $overview-font;
   color: $color-overview;
+
   @include text(12px, 16px);
 }
 

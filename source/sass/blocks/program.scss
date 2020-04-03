@@ -11,6 +11,7 @@
 .program__title {
   margin: 0;
   padding-left: 72px;
+
   @include text(24px, 37px);
   text-transform: uppercase;
   font-weight: 400;
