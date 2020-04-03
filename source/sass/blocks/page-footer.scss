@@ -1,0 +1,13 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.page-footer {
+  background-color: $color-bg-block;
+  padding: 0 20px;
+}
+
+.page-footer__logo,
+.page-footer__social,
+.page-footer__copyright {
+  border-bottom: 1px solid $color-border;
+}

@@ -1,0 +1,18 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.collaboration {
+  padding: 20px 20px;
+}
+
+.collaboration__title {
+  @include text(16px, 20px);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.collaboration__contacts {
+  font-family: $overview-font;
+  color: $color-overview;
+  @include text(14px, 20px);
+}

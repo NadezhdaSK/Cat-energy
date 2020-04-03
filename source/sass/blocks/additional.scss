@@ -1,0 +1,37 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.additional {
+  padding: 25px 20px;
+}
+
+.additional__title {
+  @include text(24px, 24px);
+  font-weight: 400;
+}
+
+.additional__list {
+  border-top: 1px solid #cdcdcd;
+  @include list;
+}
+
+.additional__item {
+  padding-bottom: 17px;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.additional__subject {
+  color: #222222;
+}
+
+.additional__subject-title {
+  @include text(16px, 16px);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.additional__table {
+  @include text(14px, 14px);
+  font-family: $overview-font;
+  color: $color-overview;
+}

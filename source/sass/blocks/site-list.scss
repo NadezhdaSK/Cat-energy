@@ -1,0 +1,13 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.site-list {
+  @include list;
+}
+
+.site-list__link {
+  @include text(20px, 20px);
+  font-weight: 500;
+  color: $color-text;
+  text-transform: uppercase;
+}

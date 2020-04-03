@@ -1,0 +1,69 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.example {
+  padding: 20px 20px;
+  background-color: $color-bg-block;
+}
+
+.example__title {
+  margin: 0;
+  margin-bottom: 20px;
+  @include text(36px, 60px);
+  font-weight: 400;
+}
+
+.example__overview {
+  font-family: $overview-font;
+  @include text(14px, 18px);
+  color: $color-overview;
+}
+
+.example__result {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 125px;
+  text-align: center;
+}
+
+.example__result--left {
+  margin-right: 24px;
+}
+
+.example__value {
+  margin-top: 13px;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+  padding: 15px 0;
+  @include text(24px, 24px);
+  text-transform: uppercase;
+}
+
+.example__subtitle {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  padding: 0 15px;
+  background-color: $color-bg-block;
+  margin: 0;
+  font-family: $overview-font;
+  color: $color-overview;
+  @include text(12px, 12px);
+}
+
+.example__costs {
+  text-align: center;
+  @include text(14px, 20px);
+  text-transform: uppercase;
+}
+
+.example__btn-slider {
+  border: none;
+  background-color: transparent;
+  font-family: $main-font;
+  @include text(16px, 20px);
+  text-transform: uppercase;
+}

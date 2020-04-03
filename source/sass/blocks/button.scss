@@ -1,0 +1,22 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.button {
+  display: block;
+  min-height: 40px;
+  padding: 11px;
+  background-color: $color-btn;
+  text-align: center;
+  @include text(16px, 20px);
+  color: $color-text-white;
+  text-transform: uppercase;
+}
+
+.button--grey {
+  background-color: $btn-grey;
+  color: $color-overview;
+}
+
+.button--small {
+  @include text(14px, 18px);
+}
