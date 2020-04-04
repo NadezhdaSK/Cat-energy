@@ -1,6 +1,3 @@
-@import "../variables.scss";
-@import "../mixins.scss";
-
 .program {
   margin-bottom: 20px;
   min-height: 266px;
@@ -18,6 +15,7 @@
 }
 
 .program__overview {
+  @include text(14px, 18px);
   font-family: $overview-font;
   color: $color-overview;
 }

@@ -1,6 +1,3 @@
-@import "../variables.scss";
-@import "../mixins.scss";
-
 .hero-header {
   position: relative;
 }
@@ -9,8 +6,8 @@
   margin-bottom: 135px;
   padding: 29px 20px;
   min-height: 305px;
-  background-color: #b6f2d0;
-  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-color: $color-btn;
+  background-image: url("../img/index-background-mobile@1x.jpg");
 }
 
 .hero-header__slogan {

@@ -1,14 +1,11 @@
-@import "../variables.scss";
-@import "../mixins.scss";
-
 .free-gift {
   margin: 0 auto;
   margin-bottom: 35px;
   width: 280px;
   height: 289px;
   padding-top: 185px;
-  background-color: #b6f2d0;
-  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-color: $color-btn;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
   text-align: center;
 }
 
