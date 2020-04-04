@@ -1,11 +1,13 @@
 .button {
   display: block;
   min-height: 40px;
+  border: none;
   padding: 11px;
   background-color: $color-btn;
   text-align: center;
 
   @include text(16px, 20px);
+  font-family: $main-font;
   color: $color-text-white;
   text-transform: uppercase;
 }

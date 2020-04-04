@@ -1,0 +1,50 @@
+.form {
+  margin-bottom: 32px;
+}
+
+.form__fieldset {
+  border: none;
+  padding: 25px 20px;
+}
+
+.form__fieldset--program {
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+
+.form__label {
+  @include text(16px, 18px);
+  text-transform: uppercase;
+  color: $color-label;
+}
+
+.form__title {
+  @include text(24px, 24px);
+  padding-top: 30px;
+}
+
+.form__control {
+  border: 1px solid $color-input;
+  padding: 13px 16px;
+}
+
+.form__control,
+.form__control::placeholder {
+  @include text(16px, 18px);
+  font-family: $main-font;
+  color: $color-ph;
+  text-transform: uppercase;
+}
+
+.form__button {
+  margin: 20px;
+  width: 280px;
+}
+
+.form__note {
+  display: block;
+  margin: 0 auto;
+  width: 160px;
+  font-family: $overview-font;
+  color: $color-ph;
+}

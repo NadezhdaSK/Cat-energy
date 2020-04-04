@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Подбор программы</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
@@ -41,7 +42,7 @@
           <input type="text" class="form__control form__control--text" name="age" placeholder="7">
         </label>
       </fieldset>
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset form__fieldset--program">
         <input type="radio" class="form__control form__control--radio" id="slimming" value="slimming" name="program" checked>
         <label class="form__label form__label--radio" for="slimming">Похудение</label>
         <input type="radio" class="form__control form__control--radio" id="mass-gain" value="mass gain" name="program">
@@ -52,15 +53,15 @@
       <fieldset class="form__fieldset">
         <legend class="form__title">Контактные данные (владельца кота)</legend>
         <label class="form__label form__label--mail">E-mail:*
-          <input type="email" class="form__control form__control--mail" name="email" placeholder="kuklachev@gmail.com" required>
+          <input type="email" class="form__control form__control--text" name="email" placeholder="kuklachev@gmail.com" required>
         </label>
         <label class="form__label form__label--tel">Телефон:*
-          <input type="tel" class="form__control form__control--tel" name="tel" placeholder="8 (960) 900-60-90" required>
+          <input type="tel" class="form__control form__control--text" name="tel" placeholder="8 (960) 900-60-90" required>
         </label>
       </fieldset>
       <fieldset class="form__fieldset">
         <legend class="form__title">Комментарий</legend>
-        <textarea name="comment" id="comment" cols="40" rows="4" class="form__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <textarea name="comment" id="comment" cols="37" rows="7" class="form__control form__control--textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="form__fieldset">
         <legend class="form__title">Дополнительно</legend>
@@ -74,9 +75,9 @@
         <label class="form__label form__label--checkbox" for="vitamins">Витамины</label>
       </fieldset>
       <button type="submit" class="form__button button">Отправить заявку</button>
-      <small>* — Обязательные поля</small>
+      <small class="form__note">* — Обязательные поля</small>
     </form>
-    <section class="collaboration">
+    <section class="collaboration collaboration--grey">
       <h2 class="collaboration__title">Приглашаем к сотрудничеству дилеров!</h2>
       <p class="collaboration__contacts">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       <div>Здесь будет карта</div>
