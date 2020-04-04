@@ -1,0 +1,9 @@
+@mixin text($font-size: 14px, $line-height: 14px) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin list($list-style: none, $padding-left: 0) {
+  list-style: $list-style;
+  padding-left: $padding-left;
+}

@@ -1,0 +1,22 @@
+.catalog__list {
+  border-top: 1px solid #ededed;
+
+  @include list;
+}
+
+.catalog__more {
+  padding: 25px 20px;
+  text-align: center;
+  border-bottom: 1px solid #ededed;
+}
+
+.catalog__text-more {
+  @include text(16px, 20px);
+  text-transform: uppercase;
+}
+
+.catalog__subtitle-more {
+  @include text(12px, 16px);
+  font-family: $overview-font;
+  color: $color-overview;
+}

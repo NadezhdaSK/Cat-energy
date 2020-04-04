@@ -1,0 +1,7 @@
+.programmes {
+  padding: 0 20px;
+}
+
+.programmes__list {
+  @include list;
+}
