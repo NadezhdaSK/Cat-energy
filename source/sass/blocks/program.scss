@@ -1,5 +1,6 @@
 .program {
   margin-bottom: 20px;
+  width: 280px;
   min-height: 266px;
   padding: 36px 20px 20px;
   background-color: $color-bg-block;
@@ -24,4 +25,24 @@
   @include text(16px, 16px);
   text-transform: uppercase;
   color: $color-text;
+}
+
+@media (min-width: $tablet-width) {
+  .program {
+    width: 710px;
+    min-height: 372px;
+    margin-bottom: 35px;
+    padding: 65px 50px 50px;
+  }
+
+  .program__title {
+    margin: 0;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program {
+    width: 570px;
+  }
 }

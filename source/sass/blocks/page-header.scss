@@ -1,0 +1,17 @@
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 60px;
+    padding-top: 24px;
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    margin-bottom: 95px;
+    padding-top: 55px;
+    min-height: 65px;
+  }
+}

@@ -4,3 +4,11 @@
   text-align: center;
   color: $color-text-white;
 }
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    width: 430px;
+    color: $color-text;
+    text-align: left;
+  }
+}

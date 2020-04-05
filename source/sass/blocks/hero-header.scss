@@ -1,13 +1,23 @@
 .hero-header {
-  position: relative;
+  width: 100%;
 }
 
 .hero-header__wrapper {
+  position: relative;
+}
+
+.hero-header__bg-img {
   margin-bottom: 135px;
-  padding: 29px 20px;
   min-height: 305px;
+  // width: 320px;
   background-color: $color-btn;
   background-image: url("../img/index-background-mobile@1x.jpg");
+  background-size: 100%;
+}
+
+.hero-header__wrapper-text {
+  position: absolute;
+  top: 30px;
 }
 
 .hero-header__slogan {
@@ -28,4 +38,59 @@
 .hero-header__program {
   margin: 0 auto;
   width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .hero-header {
+    margin-bottom: 520px;
+  }
+
+  .hero-header__bg-img {
+    margin-bottom: 0;
+    min-height: 200px;
+    background: none;
+  }
+
+  .hero-header__slogan {
+    color: $color-text;
+    text-align: left;
+
+    @include text(20px, 20px);
+  }
+
+  .hero-header__program {
+    position: relative;
+    margin-left: 0;
+    z-index: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero-header {
+    min-height: 290px;
+    margin-bottom: 270px;
+  }
+
+  .hero-header__wrapper {
+    display: flex;
+  }
+
+  .hero-header__wrapper-text {
+    position: relative;
+    top: 0;
+  }
+
+  .hero-header__bg-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 720px;
+    height: 695px;
+    background-color: $color-btn;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+  }
+
+  .hero-header__image {
+    z-index: 1;
+  }
 }

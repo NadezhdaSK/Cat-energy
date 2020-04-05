@@ -1,10 +1,36 @@
 .page-footer {
   background-color: $color-bg-block;
-  padding: 0 20px;
 }
 
 .page-footer__logo,
 .page-footer__social,
 .page-footer__copyright {
   border-bottom: 1px solid $color-border;
+}
+
+.page-footer__logo {
+  display: block;
+  min-height: 95px;
+}
+
+.page-footer__social {
+  min-height: 65px;
+}
+
+.page-footer__copyright {
+  min-height: 85px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    width: $tablet-width;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: $desktop-width;
+  }
 }
