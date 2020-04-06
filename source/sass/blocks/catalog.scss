@@ -8,6 +8,7 @@
   padding: 25px 20px;
   text-align: center;
   border-bottom: 1px solid #ededed;
+  background-color: transparent;
 }
 
 .catalog__text-more {
@@ -19,4 +20,13 @@
   @include text(12px, 16px);
   font-family: $overview-font;
   color: $color-overview;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: none;
+  }
 }

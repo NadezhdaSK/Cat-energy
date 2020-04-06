@@ -8,3 +8,32 @@
   color: $color-text;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 440px;
+    z-index: 1;
+  }
+
+  .site-list__link {
+    @include text(18px, 24px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    width: 480px;
+  }
+
+  .site-list__link {
+    @include text(20px, 24px);
+  }
+
+  .site-list__link--index {
+    color: $color-text-white;
+  }
+}

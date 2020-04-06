@@ -1,7 +1,11 @@
-.programmes {
-  padding: 0 20px;
-}
-
 .programmes__list {
   @include list;
+}
+
+@media (min-width: $desktop-width) {
+  .programmes__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }

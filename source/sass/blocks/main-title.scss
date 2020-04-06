@@ -2,3 +2,9 @@
   @include text(36px, 36px);
   font-weight: 400;
 }
+
+@media (min-width: $tablet-width) {
+  .main-title {
+    @include text(60px, 60px);
+  }
+}

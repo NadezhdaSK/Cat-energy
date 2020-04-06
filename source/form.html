@@ -2,30 +2,33 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Подбор программы</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
-    <a href="index.html" class="page-header__logo">
-      <img class="page-header__logo-image" src="https://dummyimage.com/191x39/cccccc/000000" width="191" height="39" alt="Кэт энерджи">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="page-header__container container">
+      <a href="index.html" class="page-header__logo">
+        <img class="page-header__logo-image" src="https://dummyimage.com/191x39/cccccc/000000" width="191" height="39" alt="Кэт энерджи">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="page-form">
     <h1 class="page-form__title main-title">Подбор программы</h1>
@@ -84,24 +87,28 @@
     </section>
   </main>
   <footer class="page-footer">
-    <a class="page-footer__logo">
-      <img class="page-footer__logo-image" src="https://dummyimage.com/128x24/cccccc/000000" width="128" height="24" alt="Кэт энерджи">
-    </a>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link">Мы в Вконтакте</a>
-        </li>
+    <div class="page-footer__container container">
+      <div class="page-footer__logo">
+        <a class="page-footer__logo-link">
+          <img class="page-footer__logo-image" src="https://dummyimage.com/128x24/cccccc/000000" width="128" height="24" alt="Кэт энерджи">
+        </a>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link">Мы в Вконтакте</a>
+          </li>
           <li class="social__item">
             <a class="social__link">Мы в инстаграме</a>
           </li>
           <li class="social__item">
             <a class="social__link">Мы в фейсбуке</a>
           </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy (здесь будет свг)</a>
+      </div>
     </div>
   </footer>
 </body>

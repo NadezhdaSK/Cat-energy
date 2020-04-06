@@ -13,6 +13,7 @@
   @include text(16px, 20px);
   color: $color-text;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .product__overview td {
@@ -24,4 +25,22 @@
 
 .product__order {
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .product {
+    flex-direction: column;
+    margin-bottom: 140px;
+    width: 325px;
+    min-height: 430px;
+    padding: 40px 35px;
+    background-color: $color-bg-block;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product {
+    width: 245px;
+  }
 }
