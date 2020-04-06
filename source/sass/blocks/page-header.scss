@@ -1,5 +1,5 @@
 @media (min-width: $tablet-width) {
-  .page-header {
+  .page-header__container {
     display: flex;
     justify-content: space-between;
     min-height: 60px;
@@ -9,9 +9,20 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header {
-    margin-bottom: 95px;
+  .page-header__container {
+    position: relative;
+    // margin-bottom: 95px;
     padding-top: 55px;
     min-height: 65px;
+  }
+
+  .page-header__bg-img {
+    position: absolute;
+    top: 0;
+    right: -70px;
+    width: 720px;
+    height: 695px;
+    background-color: $color-btn;
+    background-image: url("../img/index-background-desktop@1x.jpg");
   }
 }

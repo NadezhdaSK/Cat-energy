@@ -23,14 +23,17 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    width: $tablet-width;
+    width: 100%;
+  }
+
+  .page-footer__container {
     display: flex;
     justify-content: space-between;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .page-footer {
-    width: $desktop-width;
-  }
-}
+// @media (min-width: $desktop-width) {
+//   .page-footer {
+//     width: $desktop-width;
+//   }
+// }

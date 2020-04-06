@@ -7,41 +7,45 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header container">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="https://dummyimage.com/191x39/cccccc/000000" width="191" height="39" alt="Кэт энерджи">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link site-list__link--index">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--index" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--index" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
+    <header class="page-header">
+      <div class="page-header__container container">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="https://dummyimage.com/191x39/cccccc/000000" width="191" height="39" alt="Кэт энерджи">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__link site-list__link--index">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link site-list__link--index" href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link site-list__link--index" href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="page-header__bg-img"></div>
+      </div>
+      <section class="hero-header">
+        <div class="hero-header__wrapper">
+          <div class="container">
+            <div class="hero-header__wrapper-text">
+              <h1 class="hero-header__title main-title">Функциональное питание для котов</h1>
+              <p class="hero-header__slogan">Занялся собой? Займись котом!</p>
+            </div>
+            <img class="hero-header__image" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Корм кэт энерджи про с курицей">
+          </div>
         </div>
-      </nav>
+        <div class="container">
+          <a href="form.html" class="hero-header__program button button--small">Подобрать программу</a>
+        </div>
+      </section>
     </header>
     <main class="page-main">
-      <section class="hero-header container">
-        <div class="hero-header__wrapper">
-          <div class="hero-header__wrapper-text">
-            <h1 class="page-main__title main-title">Функциональное
-              питание для котов</h1>
-            <p class="hero-header__slogan">Занялся собой? Займись котом!</p>
-          </div>
-          <img class="hero-header__image" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Корм кэт энерджи про с курицей">
-        </div>
-        <div class="hero-header__bg-img">
-        </div>
-        <a href="form.html" class="hero-header__program button button--small">Подобрать программу</a>
-      </section>
       <section class="programmes container">
         <h2 class="visually-hidden">Программы питания</h2>
         <ul class="programmes__list">
@@ -107,27 +111,29 @@
         <div>Здесь будет карта</div>
       </section>
     </main>
-    <footer class="page-footer container">
-      <div class="page-footer__logo">
-        <a class="page-footer__logo-link">
-          <img class="page-footer__logo-image" src="https://dummyimage.com/128x24/cccccc/000000" width="128" height="24" alt="Кэт энерджи">
-        </a>
-      </div>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link">Мы в Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link">Мы в инстаграме</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link">Мы в фейсбуке</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy (здесь будет свг)</a>
+    <footer class="page-footer">
+      <div class="page-footer__container container">
+        <div class="page-footer__logo">
+          <a class="page-footer__logo-link">
+            <img class="page-footer__logo-image" src="https://dummyimage.com/128x24/cccccc/000000" width="128" height="24" alt="Кэт энерджи">
+          </a>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link">Мы в Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link">Мы в инстаграме</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link">Мы в фейсбуке</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy (здесь будет свг)</a>
+        </div>
       </div>
     </footer>
   </body>
