@@ -1,5 +1,5 @@
 .collaboration {
-  padding: 20px 20px;
+  width: 100%;
 }
 
 .collaboration__title {
@@ -17,4 +17,41 @@
 
 .collaboration--grey {
   background-color: $color-bg-block;
+}
+
+.collaboration__map {
+  min-height: 362px;
+  background-color: #fdf7ef;
+}
+
+.collaboration__text {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .collaboration__text {
+    min-height: 204px;
+  }
+
+  .collaboration__map {
+    min-height: 396px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .collaboration {
+    position: relative;
+  }
+
+  .collaboration__text {
+    position: absolute;
+    width: 570px;
+    min-height: 127px;
+    background-color: #ffffff;
+  }
+
+  .collaboration__map {
+    min-height: 400px;
+  }
 }

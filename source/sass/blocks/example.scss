@@ -1,5 +1,7 @@
 .example {
   background-color: $color-bg-block;
+  width: 100%;
+  min-height: 705px;
 }
 
 .example__title {
@@ -68,4 +70,63 @@
 
   @include text(16px, 20px);
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    background: linear-gradient(to bottom, #ffffff 57%, $color-bg-block 57%);
+    min-height: 1082px;
+  }
+
+  .example__title {
+    @include text(60px, 60px);
+  }
+
+  .example__results {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 385px;
+  }
+
+  .example__slider {
+    min-height: 462px;
+  }
+
+  .example__subtitle {
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    background: linear-gradient(to bottom, #ffffff 24%, $color-bg-block 24%);
+    min-height: 610px;
+  }
+
+  .example__title {
+    margin-bottom: 95px;
+  }
+
+  .example__overview-block {
+    width: 435px;
+  }
+
+  .example__results {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .example__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .example__slider {
+    min-height: 0;
+  }
+
+  .example__subtitle {
+    background-color: $color-bg-block;
+  }
 }

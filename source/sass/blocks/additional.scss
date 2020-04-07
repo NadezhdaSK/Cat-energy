@@ -33,3 +33,36 @@
   font-family: $overview-font;
   color: $color-overview;
 }
+
+@media (min-width: $tablet-width) {
+  .additional__item {
+    padding: 0 40px 27px 40px;
+  }
+
+  .additional__title {
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .additional__list {
+    width: 895px;
+  }
+
+  .additional__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 17px 0;
+  }
+
+  .additional__title {
+    margin-left: 0;
+  }
+}

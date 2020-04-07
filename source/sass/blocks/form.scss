@@ -4,7 +4,6 @@
 
 .form__fieldset {
   border: none;
-  padding: 25px 20px;
 }
 
 .form__fieldset--program {
@@ -47,4 +46,25 @@
   width: 160px;
   font-family: $overview-font;
   color: $color-ph;
+}
+
+// 285*50
+
+@media (min-width: $tablet-width) {
+  .form__button {
+    display: inline-block;
+    vertical-align: middle;
+    width: 285px;
+    min-height: 50px;
+  }
+
+  .form__note {
+    display: inline-block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__button {
+    width: 570px;
+  }
 }

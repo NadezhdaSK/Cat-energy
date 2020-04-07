@@ -1,11 +1,9 @@
 .page-form__title {
   @include text(36px, 60px);
-  margin-left: 20px;
 }
 
 .page-form__subtitle {
   @include text(14px, 18px);
-  margin-left: 20px;
   width: 255px;
   text-transform: uppercase;
 }
