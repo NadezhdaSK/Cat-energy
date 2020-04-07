@@ -2,11 +2,6 @@
   padding: 25px 20px;
 }
 
-.additional__title {
-  @include text(24px, 24px);
-  font-weight: 400;
-}
-
 .additional__list {
   border-top: 1px solid #cdcdcd;
 
@@ -32,4 +27,29 @@
   @include text(14px, 14px);
   font-family: $overview-font;
   color: $color-overview;
+}
+
+@media (min-width: $tablet-width) {
+  .additional__item {
+    padding: 0 40px 27px 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .additional__list {
+    width: 895px;
+  }
+
+  .additional__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 17px 0;
+  }
 }

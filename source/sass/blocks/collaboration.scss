@@ -1,5 +1,5 @@
 .collaboration {
-  padding: 20px 20px;
+  width: 100%;
 }
 
 .collaboration__title {
@@ -17,4 +17,31 @@
 
 .collaboration--grey {
   background-color: $color-bg-block;
+}
+
+.collaboration__text {
+  display: flex;
+  justify-content: space-between;
+  min-height: 114px;
+}
+
+@media (min-width: $tablet-width) {
+  .collaboration__text {
+    min-height: 204px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .collaboration__container {
+    position: relative;
+  }
+
+  .collaboration__text {
+    position: absolute;
+    top: 95px;
+    left: 40px;
+    width: 570px;
+    min-height: 201px;
+    background-color: #ffffff;
+  }
 }
