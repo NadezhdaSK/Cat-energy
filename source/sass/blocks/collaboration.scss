@@ -19,39 +19,29 @@
   background-color: $color-bg-block;
 }
 
-.collaboration__map {
-  min-height: 362px;
-  background-color: #fdf7ef;
-}
-
 .collaboration__text {
   display: flex;
   justify-content: space-between;
+  min-height: 114px;
 }
 
 @media (min-width: $tablet-width) {
   .collaboration__text {
     min-height: 204px;
   }
-
-  .collaboration__map {
-    min-height: 396px;
-  }
 }
 
 @media (min-width: $desktop-width) {
-  .collaboration {
+  .collaboration__container {
     position: relative;
   }
 
   .collaboration__text {
     position: absolute;
+    top: 95px;
+    left: 40px;
     width: 570px;
-    min-height: 127px;
+    min-height: 201px;
     background-color: #ffffff;
-  }
-
-  .collaboration__map {
-    min-height: 400px;
   }
 }

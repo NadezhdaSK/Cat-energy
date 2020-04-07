@@ -1,0 +1,17 @@
+.map {
+  width: 100%;
+  min-height: 362px;
+  background-color: #fdf7ef;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    min-height: 396px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    min-height: 400px;
+  }
+}

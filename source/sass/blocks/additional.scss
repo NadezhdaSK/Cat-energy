@@ -2,11 +2,6 @@
   padding: 25px 20px;
 }
 
-.additional__title {
-  @include text(24px, 24px);
-  font-weight: 400;
-}
-
 .additional__list {
   border-top: 1px solid #cdcdcd;
 
@@ -38,14 +33,10 @@
   .additional__item {
     padding: 0 40px 27px 40px;
   }
-
-  .additional__title {
-    margin-left: 40px;
-  }
 }
 
 @media (min-width: $desktop-width) {
-  .additional__block {
+  .additional__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -60,9 +51,5 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 17px 0;
-  }
-
-  .additional__title {
-    margin-left: 0;
   }
 }

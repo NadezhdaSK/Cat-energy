@@ -17,9 +17,8 @@
   color: $color-label;
 }
 
-.form__title {
+.form__legend-text {
   @include text(24px, 24px);
-  padding-top: 30px;
 }
 
 .form__control {
