@@ -2,7 +2,17 @@
   @include list;
 }
 
+@media (min-width: $tablet-width) {
+  .programmes {
+    margin-bottom: 45px;
+  }
+}
+
 @media (min-width: $desktop-width) {
+  .programmes {
+    margin-bottom: 70px;
+  }
+
   .programmes__list {
     display: flex;
     flex-wrap: wrap;

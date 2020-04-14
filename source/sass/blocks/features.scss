@@ -1,5 +1,5 @@
 .features {
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 .features__title {
@@ -14,15 +14,47 @@
 }
 
 .features__item {
+  position: relative;
   margin-top: 28px;
   padding-left: 80px;
   font-family: $overview-font;
 
   @include text(14px, 18px);
   color: $color-overview;
+
+  &::before {
+    @include pseudo;
+    top: -3px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $color-btn;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--useful::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+
+  &--cooking::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  &--intake::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  &--result::before {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .features {
+    margin-bottom: 60px;
+  }
+
   .features__list {
     display: flex;
     flex-wrap: wrap;
@@ -30,22 +62,60 @@
   }
 
   .features__item {
-    margin-top: 90px;
+    margin-top: 95px;
     margin-right: 140px;
-    border: 1px solid red;
     width: 245px;
-    min-height: 228px;
-    padding-left: 0;
-    padding-top: 115px;
+    padding: 110px 0 43px;
+
+    @include text(16px, 24px);
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      @include pseudo;
+      top: -40px;
+      right: 0;
+      font-family: $main-font;
+      color: $color-bg-block;
+      font-size: 281px;
+      line-height: 281px;
+      z-index: -1;
+    }
+
+    &--useful::after {
+      content: "1";
+      right: 15px;
+    }
+
+    &--cooking::after {
+      content: "2";
+    }
+
+    &--intake::after {
+      content: "3";
+    }
+
+    &--result::after {
+      content: "4";
+    }
   }
 
-  .features__item:nth-child(1),
-  .features__item:nth-child(2) {
-    margin-top: 0;
-  }
-
-  .features__item:nth-child(2n) {
-    margin-right: 0;
+  .features__title {
+    @include text(60px, 60px);
   }
 }
 
@@ -55,5 +125,9 @@
   .features__item:nth-child(2) {
     margin-top: 0;
     margin-right: 80px;
+  }
+
+  .features {
+    margin-bottom: 50px;
   }
 }

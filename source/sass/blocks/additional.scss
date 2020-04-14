@@ -1,15 +1,12 @@
-.additional {
-  padding: 25px 20px;
-}
-
 .additional__list {
+  margin: 0 0 40px;
   border-top: 1px solid #cdcdcd;
 
   @include list;
 }
 
 .additional__item {
-  padding-bottom: 17px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #cdcdcd;
 }
 
@@ -18,20 +15,67 @@
 }
 
 .additional__subject-title {
+  margin: 13px 0;
+
   @include text(16px, 16px);
   font-weight: 400;
   text-transform: uppercase;
 }
 
 .additional__table {
+  margin-bottom: 15px;
+  width: 100%;
+  border-collapse: collapse;
+
   @include text(14px, 14px);
   font-family: $overview-font;
   color: $color-overview;
 }
 
+.additional__subtitle {
+  text-align: right;
+}
+
 @media (min-width: $tablet-width) {
+  .additional__list {
+    margin-top: 47px;
+    margin-bottom: 70px;
+    border-left: 1px solid $color-input;
+    border-right: 1px solid $color-input;
+  }
+
   .additional__item {
-    padding: 0 40px 27px 40px;
+    padding: 12px 35px 27px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .additional__subject-title {
+    @include text(20px, 20px);
+  }
+
+  .additional__table {
+    margin: 0;
+    width: 300px;
+
+    @include text(16px, 20px);
+  }
+
+  .additional__table td {
+    height: 30px;
+    text-align: right;
+    vertical-align: bottom;
+  }
+
+  .additional__subtitle {
+    width: 95px;
+  }
+
+  .additional__order {
+    margin-top: 13px;
+    width: 100%;
   }
 }
 
@@ -40,16 +84,36 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 80px;
   }
 
   .additional__list {
+    margin: 0;
     width: 895px;
+    border: none;
   }
 
   .additional__item {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 17px 0;
+    padding: 12px 0;
+  }
+
+  .additional__table {
+    margin-left: auto;
+    width: 325px;
+  }
+
+  .additional__table td {
+    text-align: left;
+  }
+
+  .additional__subtitle {
+    width: 80px;
+  }
+
+  .additional__order {
+    margin: 0;
+    width: 245px;
   }
 }

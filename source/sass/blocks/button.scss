@@ -2,7 +2,7 @@
   display: block;
   min-height: 40px;
   border: none;
-  padding: 11px;
+  padding: 10px;
   background-color: $color-btn;
   text-align: center;
 
@@ -10,11 +10,29 @@
   font-family: $main-font;
   color: $color-text-white;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    background-color: $btn-hvr;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
 }
 
 .button--grey {
   background-color: $btn-grey;
   color: $color-overview;
+
+  &:hover,
+  &:focus {
+    background-color: $btn-grey-hvr;
+  }
+
+  &:active {
+    color: rgba($color-overview, 0.3);
+  }
 }
 
 .button--small {

@@ -1,14 +1,18 @@
+.hero-header {
+  margin-bottom: 25px;
+}
+
 .hero-header__wrapper {
   position: relative;
   margin-bottom: 135px;
   width: 100%;
-  padding-top: 30px;
+  padding-top: 27px;
   background: #63a73a url("../img/index-background-mobile@1x.jpg") no-repeat  50% 0;
   min-height: 305px;
 }
 
 .hero-header__slogan {
-  margin-top: 30px;
+  margin-top: 25px;
   text-align: center;
 
   @include text(14px, 14px);
@@ -43,10 +47,15 @@
   .hero-header__wrapper {
     background: none;
     min-height: 220px;
-    margin-bottom: 10px;
+    margin-bottom: 35px;
+  }
+
+  .hero-header__wrapper-text {
+    margin-left: 90px;
   }
 
   .hero-header__slogan {
+    margin-top: 40px;
     color: $color-text;
     text-align: left;
 
@@ -55,7 +64,8 @@
 
   .hero-header__program {
     position: relative;
-    margin-left: 0;
+    margin-left: 90px;
+    width: 245px;
     z-index: 1;
   }
 
@@ -63,6 +73,13 @@
     width: 430px;
     color: $color-text;
     text-align: left;
+  }
+
+  .hero-header__image {
+    margin-left: 45px;
+    width: 609px;
+    height: 609px;
+    top: 230px;
   }
 }
 
@@ -77,11 +94,18 @@
   }
 
   .hero-header__wrapper-text {
-    position: relative;
-    top: 0;
+    margin-left: 80px;
+  }
+
+  .hero-header__program {
+    margin-left: 80px;
   }
 
   .hero-header__image {
+    top: -50px;
+    margin-left: 130px;
+    width: 515px;
+    height: 500px;
     z-index: 1;
   }
 }

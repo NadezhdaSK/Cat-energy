@@ -7,3 +7,9 @@
   list-style: $list-style;
   padding-left: $padding-left;
 }
+
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
