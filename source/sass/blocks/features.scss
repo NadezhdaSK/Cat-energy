@@ -10,17 +10,23 @@
 }
 
 .features__list {
+  margin-top: 30px;
+
   @include list;
 }
 
 .features__item {
   position: relative;
-  margin-top: 28px;
+  margin-top: 26px;
   padding-left: 80px;
   font-family: $overview-font;
 
   @include text(14px, 18px);
   color: $color-overview;
+
+  &:first-child {
+    margin-top: 0;
+  }
 
   &::before {
     @include pseudo;
@@ -120,6 +126,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .features__item {
+    padding-top: 115px;
+  }
+
   .features__item,
   .features__item:nth-child(1),
   .features__item:nth-child(2) {
@@ -128,6 +138,6 @@
   }
 
   .features {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 }

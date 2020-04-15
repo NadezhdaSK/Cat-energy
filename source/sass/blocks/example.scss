@@ -146,8 +146,7 @@
   }
 
   .example__block {
-    padding-bottom: 80px;
-    background: linear-gradient(to bottom, #ffffff 50%, $color-bg-block 50%);
+    padding-bottom: 0;
   }
 
   .example__overview-block {
@@ -168,7 +167,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 55px;
+    margin-bottom: 230px;
   }
 
   .example__result {
@@ -209,7 +208,6 @@
   }
 
   .example__slider img {
-    margin: 0 auto;
     width: 690px;
     height: 517px;
   }
@@ -283,6 +281,21 @@
   }
 }
 
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  .example__slider {
+    position: relative;
+    padding: 345px 0 75px;
+    background: linear-gradient(to right, $color-bg-block 50%, $bg-block-darker 50%);
+  }
+
+  .example__slider img {
+    position: absolute;
+    top: -170px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
 @media (min-width: $desktop-width) {
   .example {
     border: none;
@@ -292,13 +305,13 @@
     width: $desktop-width;
     padding: 0 40px;
     margin: 0 auto;
-    margin-bottom: 73px;
+    margin-bottom: 75px;
   }
 
   .example__block {
-    background: $color-bg-block;
+    background: linear-gradient(to right, $color-bg-block calc(50% + 323px), $bg-block-darker calc(50% + 323px));
     padding-top: 57px;
-    padding-bottom: 53px;
+    padding-bottom: 55px;
   }
 
   .example__block-container {
@@ -332,7 +345,7 @@
 
   .example__costs {
     margin-left: 0;
-    margin-top: 20px;
+    margin-top: 30px;
     width: 100%;
     text-align: left;
   }
@@ -347,7 +360,7 @@
   }
 
   .example__slider img {
-    margin-top: -250px;
+    margin-top: -245px;
     padding-left: 40px;
   }
 
@@ -359,6 +372,6 @@
     margin-right: 0;
     padding: 0;
     width: 570px;
-    margin-top: 45px;
+    margin-top: 40px;
   }
 }
