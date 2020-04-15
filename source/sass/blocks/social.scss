@@ -1,4 +1,71 @@
+.social {
+  padding-top: 18px;
+  padding-bottom: 17px;
+}
+
 .social__list {
   @include list;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.social__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 36px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  width: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  display: block;
+  line-height: 0;
+  cursor: pointer;
+
+  &:hover svg,
+  &:focus svg {
+    fill: $color-btn;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    padding: 0;
+  }
+
+  .social__item {
+    margin-right: 25px;
+    width: 30px;
+
+    &:first-child {
+      margin-left: 40px;
+    }
+  }
+
+  .social__item:first-child svg {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__item:nth-child(2) svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__item:last-child svg {
+    width: 14px;
+    height: 28px;
+  }
 }

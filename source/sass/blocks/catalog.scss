@@ -1,32 +1,150 @@
 .catalog__list {
+  margin: 0;
   border-top: 1px solid #ededed;
 
   @include list;
 }
 
+.catalog__item {
+  padding-bottom: 24px;
+}
+
 .catalog__more {
-  padding: 25px 20px;
   text-align: center;
   border-bottom: 1px solid #ededed;
   background-color: transparent;
 }
 
+@media (max-width: $mobile-width-only) {
+  .catalog__more-container {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 320px;
+  }
+}
+
+.catalog__plus {
+  position: relative;
+  display: block;
+  margin: 17px auto 0;
+  width: 50px;
+  height: 50px;
+
+  &::before,
+  &::after {
+    @include pseudo;
+    top: 24px;
+    left: 10px;
+    width: 30px;
+    height: 2px;
+    transform-origin: 50% 50%;
+    background-color: $color-plus;
+    transition: transform 0.5s;
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
+
+  &:hover::before {
+    transform: rotate(180deg);
+  }
+
+  &:hover::after {
+    transform: rotate(270deg);
+  }
+}
+
 .catalog__text-more {
+  margin-top: 12px;
+  margin-bottom: 8px;
+
   @include text(16px, 20px);
   text-transform: uppercase;
 }
 
 .catalog__subtitle-more {
+  margin: 0;
+  margin-bottom: 22px;
+
   @include text(12px, 16px);
   font-family: $overview-font;
   color: $color-overview;
 }
 
 @media (min-width: $tablet-width) {
+  .catalog {
+    width: $tablet-width;
+    margin: 0 auto;
+    margin-bottom: 38px;
+    padding: 0 30px;
+  }
+
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     border: none;
+  }
+
+  .catalog__item {
+    margin-top: 140px;
+    width: 325px;
+    padding: 40px 35px;
+  }
+
+  .catalog__more {
+    border: 1px solid $color-input;
+  }
+
+  .catalog__more-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 350px;
+  }
+
+  .catalog__plus {
+    margin: 10px auto 45px;
+    width: 70px;
+    height: 70px;
+
+    &::before,
+    &::after {
+      @include pseudo;
+      top: 34px;
+      left: 5px;
+      width: 60px;
+    }
+  }
+
+  .catalog__text-more {
+    width: 160px;
+    margin: 0 auto 25px;
+
+    @include text(20px, 20px);
+  }
+
+  .catalog__subtitle-more {
+    margin: 0 auto;
+    width: 170px;
+
+    @include text(16px, 20px);
+  }
+
+  .catalog__to-all {
+    margin-top: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    width: $desktop-width;
+    margin: 0 auto;
+    margin-bottom: 0;
+    padding: 0 40px;
+  }
+
+  .catalog__item {
+    width: 245px;
   }
 }

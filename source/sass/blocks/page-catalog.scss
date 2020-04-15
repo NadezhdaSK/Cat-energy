@@ -1,0 +1,21 @@
+.page-catalog__title {
+  margin: 27px auto 40px;
+  width: 320px;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-catalog__title {
+    margin-bottom: 25px;
+    width: $tablet-width;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-catalog__title {
+    margin: -5px 0 25px;
+    width: $desktop-width;
+    padding: 0;
+  }
+}

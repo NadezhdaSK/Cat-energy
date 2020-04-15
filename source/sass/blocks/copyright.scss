@@ -1,5 +1,30 @@
+.copyright {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
 .copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   @include text(16px, 16px);
   font-family: $overview-font;
   color: $color-overview;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: $color-btn;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 162px;
+    padding: 0;
+  }
 }
