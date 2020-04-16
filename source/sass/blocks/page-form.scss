@@ -1,9 +1,40 @@
 .page-form__title {
+  margin-top: 15px;
+
   @include text(36px, 60px);
 }
 
 .page-form__subtitle {
-  @include text(14px, 18px);
+  margin-bottom: 17px;
   width: 255px;
+
+  @include text(14px, 18px);
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .page-form__title {
+    margin-top: 25px;
+    margin-bottom: 56px;
+
+    @include text(60px, 60px);
+  }
+
+  .page-form__subtitle {
+    width: 350px;
+    margin-left: 40px;
+    margin-bottom: 43px;
+
+    @include text(20px, 30px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-form__title {
+    margin-top: -7px;
+  }
+
+  .page-form__subtitle {
+    margin-left: 0;
+  }
 }
