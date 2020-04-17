@@ -47,4 +47,8 @@
 
     @include text(20px, 20px);
   }
+
+  .button--form {
+    @include text(20px, 20px);
+  }
 }

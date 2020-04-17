@@ -8,6 +8,10 @@
   .container {
     width: $tablet-width;
     padding: 0 30px;
+
+    &--fieldset {
+      padding: 0 67px 0 70px;
+    }
   }
 }
 
@@ -15,5 +19,15 @@
   .container {
     width: $desktop-width;
     padding: 0 40px;
+
+    &--about,
+    &--program {
+      width: 570px;
+      padding: 0;
+    }
+
+    &--about {
+      margin-right: 76px;
+    }
   }
 }
