@@ -40,13 +40,15 @@
 }
 
 @media (min-width: $tablet-width) {
-  .button {
-    @include text(20px, 20px);
-  }
-
   .button--small {
     width: 245px;
     min-height: 52px;
     padding: 15px 25px;
+
+    @include text(20px, 20px);
+  }
+
+  .button--form {
+    @include text(20px, 20px);
   }
 }
