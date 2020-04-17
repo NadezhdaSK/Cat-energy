@@ -90,17 +90,18 @@
   .catalog__item {
     margin-top: 140px;
     width: 325px;
-    padding: 40px 35px;
+    padding-bottom: 41px;
   }
 
   .catalog__more {
     border: 1px solid $color-input;
+    padding: 37px;
   }
 
   .catalog__more-container {
     display: flex;
     flex-direction: column;
-    min-height: 350px;
+    min-height: 353px;
   }
 
   .catalog__plus {

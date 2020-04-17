@@ -291,7 +291,7 @@
   .example__slider img {
     position: absolute;
     top: -170px;
-    left: 50%;
+    left: calc(50% + 8px);
     transform: translate(-50%);
   }
 }
@@ -357,11 +357,12 @@
 
   .example__slider {
     min-height: 0;
+    width: 690px;
   }
 
   .example__slider img {
     margin-top: -245px;
-    padding-left: 40px;
+    margin-left: 40px;
   }
 
   .example__subtitle {
