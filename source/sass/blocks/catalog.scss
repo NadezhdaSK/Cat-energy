@@ -83,14 +83,18 @@
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     border: none;
   }
 
   .catalog__item {
     margin-top: 140px;
+    margin-right: 58px;
     width: 325px;
     padding-bottom: 41px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
   }
 
   .catalog__more {
@@ -147,5 +151,14 @@
 
   .catalog__item {
     width: 245px;
+    margin-right: 80px;
+
+    &:nth-child(2n) {
+      margin-right: 80px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
   }
 }
