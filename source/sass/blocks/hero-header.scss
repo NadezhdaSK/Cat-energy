@@ -9,6 +9,11 @@
   padding-top: 27px;
   background: #63a73a url("../img/index-background-mobile@1x.jpg") no-repeat  50% 0;
   min-height: 305px;
+
+  @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .hero-header__slogan {
@@ -51,7 +56,7 @@
   }
 
   .hero-header__wrapper-text {
-    margin-left: 90px;
+    margin-left: 87px;
   }
 
   .hero-header__slogan {
@@ -76,9 +81,7 @@
   }
 
   .hero-header__image {
-    margin-left: 45px;
-    width: 609px;
-    height: 609px;
+    width: 709px;
     top: 230px;
   }
 }
@@ -103,9 +106,8 @@
 
   .hero-header__image {
     top: -50px;
-    margin-left: 130px;
-    width: 515px;
-    height: 500px;
+    margin-left: 115px;
+    width: 552px;
     z-index: 1;
   }
 }
