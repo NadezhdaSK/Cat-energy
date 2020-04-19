@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Cat Energy</title>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
   </head>
   <body>
     <header class="page-header page-header--main">
@@ -113,14 +118,19 @@
               <picture>
                 <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-                <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Результат у кота">
+                <img class="example__cat example__cat--before example__cat-dis" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Результат у кота">
+              </picture>
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                <img class="example__cat example__cat--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Результат у кота">
               </picture>
               <div class="example__slider-block">
-                <button class="example__btn-slider" type="button">Было</button>
+                <button class="example__btn-slider example__btn-slider--before" type="button">Было</button>
                 <div class="example__scale">
                   <div class="example__bar"></div>
                 </div>
-                <button class="example__btn-slider" type="button">Стало</button>
+                <button class="example__btn-slider example__btn-slider--after" type="button">Стало</button>
               </div>
             </div>
           </div>
@@ -238,5 +248,6 @@
       </div>
     </footer>
   <script src="js/nav.js"></script>
+  <script src="js/cat.js"></script>
   </body>
 </html>

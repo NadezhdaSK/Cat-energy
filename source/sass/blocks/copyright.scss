@@ -3,6 +3,10 @@
   padding-bottom: 22px;
 }
 
+.copyright__link path {
+  fill: #666666;
+}
+
 .copyright__link {
   display: flex;
   justify-content: space-between;
@@ -16,8 +20,8 @@
     opacity: 0.3;
   }
 
-  &:hover svg,
-  &:focus svg {
+  &:hover path,
+  &:focus path {
     fill: $color-btn;
   }
 }

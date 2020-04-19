@@ -25,13 +25,20 @@
   }
 }
 
+.social__link path,
+.social__link circle {
+  fill: #666666;
+}
+
 .social__link {
   display: block;
   line-height: 0;
   cursor: pointer;
 
-  &:hover svg,
-  &:focus svg {
+  &:hover path,
+  &:hover circle,
+  &:focus path,
+  &:focus circle {
     fill: $color-btn;
   }
 

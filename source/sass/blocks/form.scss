@@ -26,6 +26,7 @@
   @include text(16px, 18px);
   text-transform: uppercase;
   color: $color-label;
+  cursor: pointer;
 
   &:last-child {
     margin-bottom: 0;
@@ -56,35 +57,19 @@
     }
   }
 
-  &--mail::before {
-    @include pseudo;
-    top: 16px;
+  &--mail svg {
+    position: absolute;
+    top: 50%;
     right: 16px;
-    width: 17px;
-    height: 13px;
-    background: url("../img/icon-mail.svg");
+    transform: translateY(-50%);
   }
 
-  &--tel::before {
-    @include pseudo;
-    top: 13px;
+  &--tel svg {
+    position: absolute;
+    top: 50%;
     right: 13px;
-    width: 20px;
-    height: 20px;
-    background: url("../img/icon-phone.svg");
+    transform: translateY(-50%);
   }
-
-  // &--mail {
-  //   &:hover::before {
-  //     background: url("../img/icon-mail.svg");
-  //   }
-  // }
-
-  // &--tel {
-  //   &:hover::before {
-  //     background: url("../img/icon-phone.svg");
-  //   }
-  // }
 }
 
 .form__label--radio::before {
@@ -165,6 +150,10 @@
     &:focus {
       padding-right: 40px;
     }
+
+    &:focus + svg path {
+      fill: $color-btn;
+    }
   }
 
   &--textarea {
@@ -172,6 +161,11 @@
     padding: 12px 8px 12px 14px;
     width: 100%;
   }
+}
+
+.form__control:disabled + label {
+  opacity: 0.3;
+  cursor: default;
 }
 
 .form__control,
@@ -183,6 +177,8 @@
 }
 
 .form__control--text {
+  outline: none;
+
   &:hover {
     border-color: $color-scale;
   }
@@ -190,6 +186,12 @@
   &:focus {
     border: 2px solid $color-overview;
     padding: 11px 9px 11px 13px;
+  }
+
+  &:disabled {
+    background-color: $color-bg-block;
+    opacity: 0.3;
+    cursor: default;
   }
 }
 
@@ -204,6 +206,11 @@
   width: 160px;
   font-family: $overview-font;
   color: $color-ph;
+}
+
+.form__error {
+  border: 2px solid #ff8282;
+  padding: 11px 9px 11px 13px;
 }
 
 @media (min-width: $tablet-width) {
@@ -263,13 +270,11 @@
       }
     }
 
-    &--mail::before {
-      top: 20px;
+    &--mail svg {
       right: 19px;
     }
 
-    &--tel::before {
-      top: 17px;
+    &--tel svg {
       right: 17px;
     }
   }
@@ -290,6 +295,12 @@
     &--tel {
       margin-left: 15px;
       padding-right: 40px;
+    }
+
+    &--text {
+      &:focus {
+        padding: 9px 17px 9px 17px;
+      }
     }
 
     &--textarea {
@@ -316,12 +327,6 @@
   .form__control--checkbox:checked + .form__label--checkbox::after {
     top: 7px;
     left: 11px;
-  }
-
-  .form__control--text {
-    &:focus {
-      padding: 9px 17px 9px 17px;
-    }
   }
 
   .form__control--mail,
@@ -374,6 +379,11 @@
     width: auto;
 
     @include text(16px, 16px);
+  }
+
+  .form__error {
+    border: 2px solid #ff8282;
+    padding: 9px 17px 9px 17px;
   }
 }
 

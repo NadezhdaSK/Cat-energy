@@ -81,7 +81,7 @@
   text-transform: uppercase;
 }
 
-.example__slider img {
+.example__cat {
   display: block;
   margin: 0 auto;
   width: 320px;
@@ -107,6 +107,10 @@
   @include text(16px, 20px);
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.example__cat-dis {
+  display: none;
 }
 
 .example__scale {
