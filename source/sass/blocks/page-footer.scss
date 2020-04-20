@@ -13,7 +13,7 @@
   padding-bottom: 25px;
 }
 
-.page-footer__logo-link {
+.page-footer__logo-link[href] {
   cursor: pointer;
 
   &:hover,
@@ -24,6 +24,10 @@
   &:active {
     opacity: 0.6;
   }
+}
+
+.page-footer__logo-link svg {
+  fill: red;
 }
 
 @media (min-width: $tablet-width) {

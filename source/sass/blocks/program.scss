@@ -77,10 +77,16 @@
     background-image: url("../img/icon-right-arrow-long.svg");
   }
 
-  // &:hover::after,
-  // &:focus::after {
-  //  изменить стрелку
-  // }
+  &:hover,
+  &:focus {
+    padding-right: 47px;
+
+    &::after {
+      width: 33px;
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+      background-repeat: no-repeat;
+    }
+  }
 
   &:active {
     color: rgba($color-text, 0.3);
@@ -160,6 +166,11 @@
     padding-right: 49px;
 
     @include text(20px, 20px);
+
+    &:hover,
+    &:focus {
+      padding-right: 58px;
+    }
   }
 }
 
