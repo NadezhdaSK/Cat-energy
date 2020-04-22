@@ -18,6 +18,7 @@
 }
 
 .form__label {
+  outline: none;
   position: relative;
   display: flex;
   align-items: center;
@@ -151,7 +152,7 @@
       padding-right: 40px;
     }
 
-    &:focus + svg path {
+    &:focus + .form__control-icon {
       fill: $color-btn;
     }
   }
@@ -209,8 +210,12 @@
 }
 
 .form__error {
-  border: 2px solid #ff8282;
+  border: 2px solid $error;
   padding: 11px 9px 11px 13px;
+}
+
+.form__error + .form__control-icon {
+  fill: $error;
 }
 
 @media (min-width: $tablet-width) {

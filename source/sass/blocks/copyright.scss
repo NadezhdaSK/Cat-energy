@@ -3,7 +3,7 @@
   padding-bottom: 22px;
 }
 
-.copyright__link path {
+.copyright__link-icon {
   fill: #666666;
 }
 
@@ -19,11 +19,11 @@
   &:active {
     opacity: 0.3;
   }
+}
 
-  &:hover path,
-  &:focus path {
-    fill: $color-btn;
-  }
+.copyright__link:hover .copyright__link-icon,
+.copyright__link:focus .copyright__link-icon {
+  fill: $color-btn;
 }
 
 @media (min-width: $tablet-width) {
