@@ -25,26 +25,23 @@
   }
 }
 
-.social__link path,
-.social__link circle {
+.social__link-icon {
   fill: #666666;
-}
 
-.social__link {
-  display: block;
-  line-height: 0;
-  cursor: pointer;
-
-  &:hover path,
-  &:hover circle,
-  &:focus path,
-  &:focus circle {
+  &:hover,
+  &:focus {
     fill: $color-btn;
   }
 
   &:active {
     opacity: 0.3;
   }
+}
+
+.social__link {
+  display: block;
+  line-height: 0;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
