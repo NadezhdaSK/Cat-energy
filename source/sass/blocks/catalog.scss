@@ -103,6 +103,7 @@
   }
 
   .catalog__more-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     min-height: 353px;
@@ -137,7 +138,10 @@
   }
 
   .catalog__to-all {
-    margin-top: auto;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    // margin-top: auto;
   }
 }
 

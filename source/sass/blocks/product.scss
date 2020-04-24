@@ -99,3 +99,9 @@
     padding: 0 37px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product__image {
+    width: 245px;
+  }
+}
