@@ -17,6 +17,10 @@
   }
 }
 
+.form__control-icon {
+  fill: #222222;
+}
+
 .form__label {
   outline: none;
   position: relative;
@@ -149,7 +153,7 @@
   }
 
   &--tel {
-    max-width: 204px;
+    width: 204px;
   }
 
   &--mail,
@@ -164,17 +168,24 @@
     &:focus + .form__control-icon {
       fill: $color-btn;
     }
+  }
 
-    &::placeholder {
-      color: $color-ph;
-      opacity: 1;
-    }
+  &--age {
+    margin-left: 14px;
+    width: 172px;
+  }
+
+  &::placeholder {
+    color: $color-ph;
+    opacity: 1;
   }
 
   &--textarea {
     margin: 0;
     padding: 12px 8px 12px 14px;
     width: 100%;
+    min-height: 150px;
+    overflow: auto;
   }
 }
 
@@ -188,11 +199,12 @@
 
   &:hover {
     border-color: $color-scale;
+    box-shadow: none;
   }
 
   &:focus {
-    border: 2px solid $color-overview;
-    padding: 11px 9px 11px 13px;
+    border: 1px solid $color-overview;
+    box-shadow: 0 0 0 1px $color-overview;
   }
 
   &:disabled {
@@ -216,8 +228,8 @@
 }
 
 .form__error {
-  border: 2px solid $error;
-  padding: 11px 9px 11px 13px;
+  border: 1px solid $error;
+  box-shadow: 0 0 0 1px $error;
 }
 
 .form__error + .form__control-icon {
@@ -254,7 +266,12 @@
   .form__block-add {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+  }
+
+  @media (max-width: $desktop-width - 1px) {
+    .form__label--checkbox:nth-of-type(2n+1) {
+      margin-right: auto;
+    }
   }
 
   .form__label {
@@ -306,27 +323,19 @@
     }
 
     &--tel {
-      max-width: 535px;
+      width: 535px;
       margin-left: 15px;
       padding-right: 40px;
     }
 
     &--text {
       height: 52px;
-
-      &:focus {
-        padding: 9px 17px 9px 17px;
-      }
     }
 
     &--textarea {
       min-height: 175px;
       margin: 0;
       padding: 14px 10px 18px 18px;
-
-      &:focus {
-        padding: 13px 10px 17px 17px;
-      }
     }
   }
 
@@ -392,11 +401,6 @@
 
     @include text(16px, 16px);
   }
-
-  .form__error {
-    border: 2px solid #ff8282;
-    padding: 9px 17px 9px 17px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -413,14 +417,10 @@
   }
 
   .form__fieldset--about {
-    // display: inline-block;
-    // vertical-align: top;
     width: 570px;
   }
 
   .form__fieldset--program {
-    // display: inline-block;
-    // vertical-align: top;
     margin: 0;
     margin-bottom: 22px;
   }
@@ -455,6 +455,10 @@
     &--checkbox {
       width: 245px;
     }
+  }
+
+  .form__label--checkbox:nth-of-type(1n):not(:last-child) {
+    margin-right: auto;
   }
 
   .form__button {
