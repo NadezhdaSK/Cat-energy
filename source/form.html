@@ -20,11 +20,13 @@
   <header class="page-header">
     <div class="page-header__container">
       <a class="page-header__logo page-header__logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Кэт энерджи">
-        </picture>
+        <div class="page-header__logo-container">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Кэт энерджи">
+          </picture>
+        </div>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
@@ -145,29 +147,29 @@
   <footer class="page-footer">
     <div class="page-footer__container container">
       <div class="page-footer__logo">
-        <a class="page-footer__logo-link" href="index.html" aria-label="CatEnergy">
-          <img src="img/logo-footer.svg" alt="" width="128" height="24">
+        <a class="page-footer__logo-link" href="index.html">
+          <img src="img/logo-footer.svg" alt="CatEnergy" width="128" height="24">
         </a>
       </div>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link" aria-label="Мы в Вконтакте">
-              <svg class="social__link-icon" width="22" height="12">
+            <a class="social__link" href="" aria-label="Мы в Вконтакте">
+              <svg class="social__link-icon social__link-icon--vk" width="22" height="12">
                 <use xlink:href="#icon-vk"></use>
               </svg>
             </a>
           </li>
-          <li class="social__item">
-            <a class="social__link" aria-label="Мы в инстаграме">
-              <svg class="social__link-icon" width="16" height="16">
+          <li class="social__item social__item">
+            <a class="social__link" href="" aria-label="Мы в инстаграме">
+              <svg class="social__link-icon social__link-icon--insta" width="16" height="16">
                 <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" aria-label="Мы в фейсбуке">
-              <svg class="social__link-icon" width="10" height="19">
+            <a class="social__link" href="" aria-label="Мы в фейсбуке">
+              <svg class="social__link-icon social__link-icon--fb" width="10" height="19">
                 <use xlink:href="#icon-fb"></use>
               </svg>
             </a>

@@ -1,7 +1,6 @@
 .page-header__logo {
   display: block;
   height: 66px;
-
   border-bottom: 1px solid $color-input;
 
   &[href] {
@@ -19,8 +18,15 @@
 }
 
 .page-header__logo-image {
-  width: 231px;
-  padding: 11px 20px 16px;
+  padding: 11px 0 16px;
+}
+
+@media (max-width: $tablet-width - 1px) {
+  .page-header__logo-container {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -36,7 +42,7 @@
 
   .page-header__logo {
     position: relative;
-    border-bottom: none;
+    border: none;
   }
 
   .page-header__logo-image {
@@ -48,7 +54,7 @@
 @media (min-width: $desktop-width) {
   .page-header--main {
     margin-bottom: 80px;
-    height: 696px;
+    min-height: 696px;
     background:
       url("../img/index-background-desktop@1x.jpg") no-repeat left calc(50% + 360px) top,
       linear-gradient(to right, white 50%, #64a83b 50%);

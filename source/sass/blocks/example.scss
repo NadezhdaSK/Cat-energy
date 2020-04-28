@@ -123,6 +123,7 @@
 }
 
 .example__bar {
+  border: none;
   position: absolute;
   top: 50%;
   left: 5px;
@@ -131,6 +132,7 @@
   height: 6px;
   border-radius: 5px;
   background-color: $color-btn;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
@@ -223,6 +225,7 @@
 
   .example__btn-slider {
     position: relative;
+    overflow: visible;
 
     @include text(20px, 20px);
 

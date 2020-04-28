@@ -170,6 +170,15 @@
     }
   }
 
+  &--radio,
+  &--checkbox {
+    &:focus + .form__label::before {
+      border-color: $radio-hvr;
+      outline: thin dotted;
+      outline-offset: -2px;
+    }
+  }
+
   &--age {
     margin-left: 14px;
     width: 172px;

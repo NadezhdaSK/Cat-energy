@@ -27,21 +27,21 @@
 
 .social__link-icon {
   fill: #666666;
-
-  &:hover,
-  &:focus {
-    fill: $color-btn;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 .social__link {
   display: block;
   line-height: 0;
   cursor: pointer;
+
+  &:hover .social__link-icon,
+  &:focus .social__link-icon {
+    fill: $color-btn;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -58,17 +58,17 @@
     }
   }
 
-  .social__item:first-child svg {
+  .social__link-icon--vk {
     width: 30px;
     height: 16px;
   }
 
-  .social__item:nth-child(2) svg {
+  .social__link-icon--insta {
     width: 23px;
     height: 23px;
   }
 
-  .social__item:last-child svg {
+  .social__link-icon--fb {
     width: 14px;
     height: 28px;
   }

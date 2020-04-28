@@ -53,6 +53,8 @@
   }
 
   .additional__subject-title {
+    width: 250px;
+
     @include text(20px, 20px);
   }
 
@@ -94,8 +96,6 @@
   }
 
   .additional__item {
-    display: flex;
-    flex-wrap: wrap;
     padding: 12px 0;
   }
 
