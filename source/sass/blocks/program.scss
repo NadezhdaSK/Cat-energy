@@ -1,8 +1,8 @@
 .program {
   position: relative;
   margin-bottom: 20px;
-  width: 280px;
-  min-height: 266px;
+  width: 100%;
+  // min-height: 266px;
   padding: 30px 20px 18px;
   background-color: $color-bg-block;
 
@@ -114,7 +114,7 @@
 
 @media (min-width: $tablet-width) {
   .program {
-    width: 710px;
+    // width: 710px;
     margin-bottom: 30px;
     padding: 75px 50px 60px;
 
@@ -153,12 +153,12 @@
   .program__overview {
     margin-top: 26px;
     margin-bottom: 55px;
-    width: 380px;
+    width: 63%;
 
     @include text(16px, 24px);
 
     &--mass {
-      width: 344px;
+      width: 56.8%;
     }
   }
 

@@ -5,7 +5,6 @@
 }
 
 .example__title {
-  width: 320px;
   padding: 0 20px;
   margin: 0 auto;
   margin-bottom: 25px;
@@ -19,13 +18,11 @@
 }
 
 .example__overview-block {
-  width: 320px;
   padding: 0 20px;
   margin: 0 auto;
 }
 
 .example__overview {
-  width: 275px;
   font-family: $overview-font;
 
   @include text(14px, 18px);
@@ -33,6 +30,7 @@
 }
 
 .example__results {
+  text-align: center;
   margin-bottom: 35px;
 }
 
@@ -143,7 +141,6 @@
   }
 
   .example__title {
-    width: $tablet-width;
     padding: 0 30px;
     margin: 0 auto;
     margin-bottom: 65px;
@@ -156,7 +153,6 @@
   }
 
   .example__overview-block {
-    width: $tablet-width;
     padding: 0 30px;
     margin: 0 auto;
   }

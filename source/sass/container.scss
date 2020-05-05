@@ -1,12 +1,12 @@
 .container {
-  width: 320px;
+  width: 100%;
   padding: 0 20px;
   margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .container {
-    width: $tablet-width;
+    width: 100%;
     padding: 0 30px;
 
     &--fieldset {

@@ -19,6 +19,7 @@
   position: relative;
   margin-top: 26px;
   padding-left: 80px;
+  min-height: 60px;
   font-family: $overview-font;
 
   @include text(14px, 18px);
@@ -91,8 +92,8 @@
 
   .features__item {
     margin-top: 95px;
-    margin-right: 140px;
-    width: 245px;
+    margin-right: 20%;
+    width: 35%;
     padding: 110px 0 43px;
 
     @include text(16px, 24px);
@@ -150,6 +151,8 @@
 @media (min-width: $desktop-width) {
   .features__item {
     padding-top: 115px;
+    margin-right: 140px;
+    width: 245px;
   }
 
   .features__item,

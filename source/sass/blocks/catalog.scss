@@ -19,7 +19,6 @@
   .catalog__more-container {
     margin: 0 auto;
     padding: 0 20px;
-    width: 320px;
   }
 }
 
@@ -74,7 +73,6 @@
 
 @media (min-width: $tablet-width) {
   .catalog {
-    width: $tablet-width;
     margin: 0 auto;
     margin-bottom: 38px;
     padding: 0 30px;
@@ -89,7 +87,7 @@
   .catalog__item {
     margin-top: 140px;
     margin-right: 58px;
-    width: 325px;
+    width: 45.7%;
     padding-bottom: 41px;
 
     &:nth-child(2n) {
