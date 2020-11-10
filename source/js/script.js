@@ -1,15 +1,13 @@
 var navMain = document.querySelector(".main-nav");
 var navToggle = document.querySelector(".main-nav__toggle");
-var before = document.querySelector(".example__cat--before");
-var after = document.querySelector(".example__cat--after");
-var btnBefore = document.querySelector(".example__btn-slider--before");
-var btnAfter = document.querySelector(".example__btn-slider--after");
 var catName = document.querySelector(".form__name");
 var catWeight = document.querySelector(".form__control--weight");
 var email = document.querySelector(".form__control--mail");
 var tel = document.querySelector(".form__control--tel");
 var button = document.querySelector(".form__button");
 var formMain = document.querySelector(".form");
+
+// меню навигации
 
 if (navMain) {
   navMain.classList.remove("main-nav--nojs");
@@ -25,18 +23,72 @@ if (navMain) {
   });
 }
 
+// Слайдер на главной странице
+
+var before = document.querySelector(".example__cat-box--before");
+var after = document.querySelector(".example__cat-box--after");
+var btnBefore = document.querySelector(".example__btn-slider--before");
+var btnAfter = document.querySelector(".example__btn-slider--after");
+var slider = document.querySelector(".example__scale");
+var boxSlider = document.querySelector(".example__slider");
+var blockExample = document.querySelector(".example__block");
+
+
+if (slider) {
+  slider.oninput = function() {
+    var sliderValuePercent = +this.value;
+    after.style.width = sliderValuePercent + '%';
+    before.style.width = (100 - sliderValuePercent) + '%';
+
+    if (window.matchMedia("(min-width: 758px)").matches && window.matchMedia("(max-width: 1299px)").matches) {
+      boxSlider.style.background =
+      'linear-gradient(to right, #f2f2f2 ' +
+      (100 - sliderValuePercent) +
+      '%, #eaeaea ' +
+      (100 - sliderValuePercent) +
+      '%';
+    }
+
+    if (window.matchMedia("(min-width: 1300px)").matches) {
+      var gradientCat = (blockExample.offsetWidth / 2) - 67 + ((100 - sliderValuePercent) * 6.9) + 'px';
+      blockExample.style.background = 'linear-gradient(to right, #f2f2f2 ' + gradientCat + ', #eaeaea ' + gradientCat;
+    }
+  };
+}
+
 if(btnAfter && btnBefore) {
   btnBefore.addEventListener("click", function() {
-    before.classList.remove("example__cat-dis");
-    after.classList.add("example__cat-dis");
-  });
+    slider.value = 0;
+    before.style.width = '100%';
+    after.style.width = '0%';
 
+    if (window.matchMedia("(min-width: 758px)").matches && window.matchMedia("(max-width: 1299px)").matches) {
+      boxSlider.style.background = 'linear-gradient(to right, #f2f2f2 100%, #eaeaea 100%';
+    }
+
+    if (window.matchMedia("(min-width: 1300px)").matches) {
+      var gradientCat = (blockExample.offsetWidth / 2) - 67 + (100 * 6.9) + 'px';
+      blockExample.style.background = 'linear-gradient(to right, #f2f2f2 ' + gradientCat + ', #eaeaea ' + gradientCat;
+    }
+  });
 
   btnAfter.addEventListener("click", function() {
-    before.classList.add("example__cat-dis");
-    after.classList.remove("example__cat-dis");
+    slider.value = 100;
+    before.style.width = '0%';
+    after.style.width = '100%';
+
+    if (window.matchMedia("(min-width: 758px)").matches && window.matchMedia("(max-width: 1299px)").matches) {
+      boxSlider.style.background = 'linear-gradient(to right, #f2f2f2 0%, #eaeaea 0%';
+    }
+
+    if (window.matchMedia("(min-width: 1300px)").matches) {
+      var gradientCat = (blockExample.offsetWidth / 2) - 67 + 'px';
+      blockExample.style.background = 'linear-gradient(to right, #f2f2f2 ' + gradientCat + ', #eaeaea ' + gradientCat;
+    }
   });
 }
+
+// Ошибки формы
 
 if(formMain) {
   formMain.addEventListener("submit", function(evt) {

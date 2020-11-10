@@ -129,29 +129,13 @@
               </div>
             </div>
             <div class="example__slider">
-              <picture>
-                <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
-
-                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-                <img class="example__cat example__cat--before example__cat-dis" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Результат у кота">
-              </picture>
-              <picture>
-                <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
-
-                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-                <img class="example__cat example__cat--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Результат у кота">
-              </picture>
+              <div class="example__cat-box example__cat-box--before">
+              </div>
+              <div class="example__cat-box example__cat-box--after">
+              </div>
               <div class="example__slider-block">
                 <button class="example__btn-slider example__btn-slider--before" type="button">Было</button>
-                <div class="example__scale">
-                  <button class="example__bar" aria-label="уменшить или увеличить вес"></button>
-                </div>
+                <input type="range" min="0" max="100" class="example__scale" aria-label="уменшить или увеличить вес" value="50">
                 <button class="example__btn-slider example__btn-slider--after" type="button">Стало</button>
               </div>
             </div>
