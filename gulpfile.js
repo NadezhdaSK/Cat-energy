@@ -14,7 +14,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var imagemin = require("gulp-imagemin");
-var uglify = require("gulp-uglify");
+var uglify = require('gulp-uglify-es').default;
 var pipeline = require("readable-stream").pipeline;
 
 var server = require("browser-sync").create();

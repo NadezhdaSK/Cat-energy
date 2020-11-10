@@ -49,6 +49,7 @@
   },
   "dependencies": {
     "del": "^5.1.0",
+    "gulp-uglify-es": "^2.0.0",
     "readable-stream": "^3.6.0"
   }
 }

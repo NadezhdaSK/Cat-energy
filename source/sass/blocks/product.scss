@@ -3,6 +3,10 @@
   border-top: none;
 }
 
+.product-hide {
+  display: none;
+}
+
 
 @media (max-width: $mobile-width-only) {
   .product__container {

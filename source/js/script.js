@@ -1,11 +1,13 @@
-var navMain = document.querySelector(".main-nav");
-var navToggle = document.querySelector(".main-nav__toggle");
-var catName = document.querySelector(".form__name");
-var catWeight = document.querySelector(".form__control--weight");
-var email = document.querySelector(".form__control--mail");
-var tel = document.querySelector(".form__control--tel");
-var button = document.querySelector(".form__button");
-var formMain = document.querySelector(".form");
+"use strict";
+
+let navMain = document.querySelector(".main-nav");
+let navToggle = document.querySelector(".main-nav__toggle");
+let catName = document.querySelector(".form__name");
+let catWeight = document.querySelector(".form__control--weight");
+let email = document.querySelector(".form__control--mail");
+let tel = document.querySelector(".form__control--tel");
+let button = document.querySelector(".form__button");
+let formMain = document.querySelector(".form");
 
 // меню навигации
 
@@ -25,18 +27,18 @@ if (navMain) {
 
 // Слайдер на главной странице
 
-var before = document.querySelector(".example__cat-box--before");
-var after = document.querySelector(".example__cat-box--after");
-var btnBefore = document.querySelector(".example__btn-slider--before");
-var btnAfter = document.querySelector(".example__btn-slider--after");
-var slider = document.querySelector(".example__scale");
-var boxSlider = document.querySelector(".example__slider");
-var blockExample = document.querySelector(".example__block");
+let before = document.querySelector(".example__cat-box--before");
+let after = document.querySelector(".example__cat-box--after");
+let btnBefore = document.querySelector(".example__btn-slider--before");
+let btnAfter = document.querySelector(".example__btn-slider--after");
+let slider = document.querySelector(".example__scale");
+let boxSlider = document.querySelector(".example__slider");
+let blockExample = document.querySelector(".example__block");
 
 
 if (slider) {
   slider.oninput = function() {
-    var sliderValuePercent = +this.value;
+    let sliderValuePercent = +this.value;
     after.style.width = sliderValuePercent + '%';
     before.style.width = (100 - sliderValuePercent) + '%';
 
@@ -50,7 +52,7 @@ if (slider) {
     }
 
     if (window.matchMedia("(min-width: 1300px)").matches) {
-      var gradientCat = (blockExample.offsetWidth / 2) - 67 + ((100 - sliderValuePercent) * 6.9) + 'px';
+      let gradientCat = (blockExample.offsetWidth / 2) - 67 + ((100 - sliderValuePercent) * 6.9) + 'px';
       blockExample.style.background = 'linear-gradient(to right, #f2f2f2 ' + gradientCat + ', #eaeaea ' + gradientCat;
     }
   };
@@ -67,7 +69,7 @@ if(btnAfter && btnBefore) {
     }
 
     if (window.matchMedia("(min-width: 1300px)").matches) {
-      var gradientCat = (blockExample.offsetWidth / 2) - 67 + (100 * 6.9) + 'px';
+      let gradientCat = (blockExample.offsetWidth / 2) - 67 + (100 * 6.9) + 'px';
       blockExample.style.background = 'linear-gradient(to right, #f2f2f2 ' + gradientCat + ', #eaeaea ' + gradientCat;
     }
   });
@@ -82,9 +84,31 @@ if(btnAfter && btnBefore) {
     }
 
     if (window.matchMedia("(min-width: 1300px)").matches) {
-      var gradientCat = (blockExample.offsetWidth / 2) - 67 + 'px';
+      let gradientCat = (blockExample.offsetWidth / 2) - 67 + 'px';
       blockExample.style.background = 'linear-gradient(to right, #f2f2f2 ' + gradientCat + ', #eaeaea ' + gradientCat;
     }
+  });
+}
+
+// Показать больше товаров в каталоге
+
+let catalogPlus = document.querySelector('.catalog__plus');
+let catalogMore = document.querySelector('.catalog__to-all');
+let product = document.querySelectorAll('.product');
+
+if (product) {
+  catalogPlus.addEventListener('click', (e) => {
+    e.preventDefault();
+    product.forEach(item => {
+      item.classList.remove('product-hide');
+    });
+  });
+
+  catalogMore.addEventListener('click', (e) => {
+    e.preventDefault();
+    product.forEach(item => {
+      item.classList.remove('product-hide');
+    });
   });
 }
 
